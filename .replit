@@ -1,3 +1,12 @@
+modules = ["python-3.11"]
 [nix]
 channel = "stable-24_05"
 packages = ["docker-compose_1"]
+
+[[ports]]
+localPort = 81
+externalPort = 3000
+
+[[ports]]
+localPort = 8000
+externalPort = 80
