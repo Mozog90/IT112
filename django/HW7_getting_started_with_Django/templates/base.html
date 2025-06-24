@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>
+        {% if user_name %}
+            Hello, {{ user_name }}!
+        {% else %}
+            Welcome to my site!
+        {% endif %}
+    </h1>
+    <img src="{% static 'welcome.jpg' %}" alt="Welcome Image" width="300">
+</body>
+</html>
