@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'HW7_getting_started_with_Django',
+    'games',
 ]
 
 MIDDLEWARE = [
