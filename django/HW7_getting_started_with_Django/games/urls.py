@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.contrib import admin
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -8,4 +9,4 @@ urlpatterns = [
     path('api/games/', views.api_game_list, name='api_game_list'),
     path('api/game/', views.api_game_detail, name='api_game_detail'),
     path('api/game/create/', views.api_game_create, name='api_game_create'),
-]
+    ]
